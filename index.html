@@ -18,19 +18,28 @@
   </div>
   </header>
   <nav>
-    <a href="#resumen">Resumen</a>
-    <a href="#perros">Perros</a>
-    <a href="#gatos">Gatos</a>
-    <a href="#otros">Otros</a>
-    <a href="#reflexion">Reflexión</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+ <a href="#resumen" onclick="mostrarSeccion('resumen')">Resumen</a>
+  <a href="#perros" onclick="mostrarSeccion('perros')">Perros</a>
+  <a href="#gatos" onclick="mostrarSeccion('gatos')">Gatos</a>
+  <a href="#otros" onclick="mostrarSeccion('otros')">Otros</a>
+  <a href="#reflexion" onclick="mostrarSeccion('reflexion')">Reflexión</a>
+  <a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a>
+  <a href="#desarrolladores" onclick="mostrarSeccion('desarrolladores')">Desarrolladores</a>
+</nav>
   <div class="container">
     <section id="resumen">
-      <h2>🌟 ¿Por qué adoptar?</h2>
+      <h2> ¿Por qué adoptar?</h2>
       <div class="card">
         <p>Adoptar no solo cambia la vida de un animal, también transforma la tuya. Muchos fueron rescatados de condiciones difíciles y hoy esperan una segunda oportunidad.</p>
         <p>En lugar de comprar, abre tu corazón a una vida que te necesita. Nuestros compañeros esperan ansiosos un hogar responsable y amoroso. ¡Descubre la alegría de adoptar!.</p>
+      </div>
+      <h2> Misión</h2>
+      <div class="card">
+        <p>Nuestra misión es rescatar y rehabilitar animales abandonados o en situación de riesgo, brindándoles una segunda oportunidad para encontrar un hogar responsable y lleno de amor donde puedan prosperar.</p>
+      </div>
+      <h2> Visión</h2>
+      <div class="card">
+        <p>Nos impulsamos por la creencia de que cada animal merece una segunda oportunidad. Nuestra misión es facilitar el vínculo transformador entre animales en necesidad y familias dispuestas a amar, a través de un proceso de adopción transparente y consciente. Nos esforzamos por educar a la comunidad sobre la importancia de la tenencia responsable y el impacto positivo que tiene la adopción en la vida de los animales y de quienes los acogen.</p>
       </div>
     </section>
     <section id="perros">
@@ -38,10 +47,11 @@
       <div class="cards">
         <div class="card"><img src="max.jpeg" alt="Max" onclick="verImagen(this.src)"><h3>Max</h3><p>¡Max te Espera! Max, un perrito mediano de 1 año, es dócil, un poco tímido y muy dormilón. Busca un hogar amplio para correr y encontrar la tranquilidad que necesita.Ya está desparasitado y listo para recibir sus vacunas.</p><button onclick="abrirFormulario('Max')">Adoptar</button></div>
         <div class="card"><img src="luna.jpeg" alt="Luna" onclick="verImagen(this.src)"><h3>Luna</h3><p>¡Luna: Amor de Cachorra! Luna, 2 meses, es una cachorrita adorable: dormilona y juguetona. ¡Ideal para familias con niños! Aún necesita vacunas y desparasitación. Dale la bienvenida a tu hogar y ve crecer su alegría.</p><button onclick="abrirFormulario('Luna')">Adoptar</button></div>
-        <div class="card"><img src="huracan.jpeg" alt="Huracan" onclick="verImagen(this.src)"><h3>Huracan</h3><p>¡Huracán: Adopta la Alegría!Huracán, 3 años, es juguetón, alegre y muy amistoso. Con toda su salud al día, solo necesita espacio y un hogar para brillar.¿Listo para la diversión? ¡Adóptalo!</p><button onclick="abrirFormulario('Max')">Adoptar</button></div>
-        <div class="card"><img src="pelusa.jpeg" alt="pelusa" onclick="verImagen(this.src)"><h3>pelusa</h3><p>¡Pelusa Busca un Hogar! Pelusa es una perrita mediana de 2 años, pura alegría y cariño, con adorables orejitas café. Obediente y juguetona, adora correr en espacios amplios.Está vacunada y desparasitada, lista para darte todo su amor.¿Buscas una compañera leal y llena de vida? ¡Pelusa te espera!.</p><button onclick="abrirFormulario('Luna')">Adoptar</button></div>
-        <div class="card"><img src="blanco.jpeg" alt="Mawhi" onclick="verImagen(this.src)"><h3>Mawhi</h3><p>¡Conoce a Mawhi! Un Cariñoso Amigo de 8 Meses Mawhi es un perrito mediano, negro y de mirada tierna. Con solo 8 meses, es juguetón, cariñoso e inteligente.Ya vacunado y desparasitado, Mawhi busca un hogar activo con o sin niños, donde pueda explorar y recibir mucho amor.¿Listo para darle una familia a esta dulzura?</p><button onclick="abrirFormulario('Max')">Adoptar</button></div>
-        <div class="card"><img src="tilin.jpeg" alt="tilin" onclick="verImagen(this.src)"><h3>Tilín</h3><p>¡Tilín: Un Compañero Leal y Valiente!Tilín es un perro adulto de aspecto fuerte y mirada inteligente. Imaginamos en él un espíritu noble y protector, listo para la aventura.Busca un hogar activo donde compartir paseos y juegos. Su lealtad será tu mayor recompensa.¿Quieres un héroe de cuatro patas? ¡Adopta a Tilín!</p><button onclick="abrirFormulario('Luna')">Adoptar</button></div>
+        <div class="card"><img src="huracan.jpeg" alt="Huracan" onclick="verImagen(this.src)"><h3>Huracan</h3><p>¡Huracán: Adopta la Alegría!Huracán, 3 años, es juguetón, alegre y muy amistoso. Con toda su salud al día, solo necesita espacio y un hogar para brillar.¿Listo para la diversión? ¡Adóptalo!</p><button onclick="abrirFormulario('Huracan')">Adoptar</button></div>
+        <div class="card"><img src="pelusa.jpeg" alt="pelusa" onclick="verImagen(this.src)"><h3>pelusa</h3><p>¡Pelusa Busca un Hogar! Pelusa es una perrita mediana de 2 años, pura alegría y cariño, con adorables orejitas café. Obediente y juguetona, adora correr en espacios amplios.Está vacunada y desparasitada, lista para darte todo su amor.¿Buscas una compañera leal y llena de vida? ¡Pelusa te espera!.</p><button onclick="abrirFormulario('Pelusa')">Adoptar</button></div>
+        <div class="card"><img src="blanco.jpeg" alt="Mawhi" onclick="verImagen(this.src)"><h3>Mawhi</h3><p>¡Conoce a Mawhi! Un Cariñoso Amigo de 8 Meses Mawhi es un perrito mediano, negro y de mirada tierna. Con solo 8 meses, es juguetón, cariñoso e inteligente.Ya vacunado y desparasitado, Mawhi busca un hogar activo con o sin niños, donde pueda explorar y recibir mucho amor.¿Listo para darle una familia a esta dulzura?</p><button onclick="abrirFormulario('Mawhi')">Adoptar</button></div>
+        <div class="card"><img src="tilin.jpeg" alt="tilin" onclick="verImagen(this.src)"><h3>Tilín</h3><p>¡Tilín: Un Compañero Leal y Valiente!Tilín es un perro adulto de aspecto fuerte y mirada inteligente. Imaginamos en él un espíritu noble y protector, listo para la aventura.Busca un hogar activo donde compartir paseos y juegos. Su lealtad será tu mayor recompensa.¿Quieres un héroe de cuatro patas? ¡Adopta a Tilín!</p><button onclick="abrirFormulario('Tilín')">Adoptar</button></div>
+        <div class="card"><img src="duquesa.jpeg" alt="Duquesa" onclick="verImagen(this.src)"><h3>Duquesa</h3><p>¡Adopta a Duquesa: Amor Travieso!Duquesa es una cachorrita adorable, mansita, ¡y le encanta morder! Casi nunca ladra, pero sus juegos incluyen mordisquitos. Busca un hogar paciente y lleno de amor que disfrute su energía y singularidad.¿Listo para darle un hogar a esta mordedora de corazones?</p><button onclick="abrirFormulario('Duquesa')">Adoptar</button></div>
       </div>
     </section>
     <section id="gatos">
@@ -51,7 +61,8 @@
         <div class="card"><img src="gato2.jpeg" alt="Rayo" onclick="verImagen(this.src)"><h3>Rayo</h3><p>¡Adopta a Rayo: Un Espíritu Libre y Cariñoso! Rayo, con su pelaje atigrado y ojos vivaces, irradia independencia y dulzura. Imaginamos en él un alma curiosa y juguetona, lista para explorar su nuevo hogar.Seguro que le encanta una buena siesta al sol y las caricias suaves. Dale una oportunidad a este felino único.¿Listo para un compañero aventurero y ronroneador? ¡Rayo te espera!</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
          <div class="card"><img src="gato5.jpeg" alt="Jade" onclick="verImagen(this.src)" ><h3>Jade</h3><p>¡Adopta a Jade: Belleza de Ojos Verdes!Jade, un gato de pelaje largo y mirada esmeralda, es tan hermoso como tranquilo. Ideal para un hogar que valore la serenidad y el cariño felino.¿Listo para enamorarte de Jade?</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
         <div class="card"><img src="gato3.jpeg" alt="Polar" onclick="verImagen(this.src)"><h3>Polar</h3><p>¡Adopta a Polar: Elegancia y Amor!Polar, un gato blanco con detalles oscuros, es tan bello como cariñoso. Sereno y afectuoso, busca un hogar para compartir mimos.¡Polar te espera!</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
-         <div class="card"><img src="gato4.jpeg" alt="Mia" onclick="verImagen(this.src)"><h3>Mia</h3><p>¡Adopta a Mía: Dulce Mirada Atigrada!Mía es una gata de pelaje atigrado con preciosos ojos verdes. Su expresión dulce y tranquila esconde un corazón lleno de cariño esperando un hogar.¡Mía te espera!</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
+         <div class="card"><img src="gato4.jpeg" alt="Mia" onclick="verImagen
+         (this.src)"><h3>Mia</h3><p>¡Adopta a Mía: Dulce Mirada Atigrada!Mía es una gata de pelaje atigrado con preciosos ojos verdes. Su expresión dulce y tranquila esconde un corazón lleno de cariño esperando un hogar.¡Mía te espera!</p><button onclick="abrirFormulario('Mia')">Adoptar</button></div>
         <div class="card"><img src="gato6.jpeg" alt="Canela" onclick="verImagen(this.src)"><h3>Canela</h3><p>¡Adopta a Canela: Amor Acogedor!Canela, gata naranja y blanca, adora las siestas y el cariño. Con su ronroneo suave, llenará tu hogar de paz y amor. ¡La compañera perfecta!</p><button onclick="abrirFormulario('Simba')">Adoptar</button></div>
       </div>
     </section>
@@ -61,6 +72,7 @@
         <div class="card"><img src="hamster.jpeg" alt="bolita"onclick="verImagen(this.src)"><h3>bolita</h3><p>¡Adopta a Bolita: Alegría en Miniatura!Bolita es un hámster adorable y curioso, listo para llenar tu hogar de pequeñas aventuras y mucho cariño. ¡Un compañero fácil de querer!</p> <p></p><button onclick="abrirFormulario('Pelusa')">Adoptar</button></div>
         <div class="card"><img src="alberto.jpeg" alt="alberto"onclick="verImagen(this.src)"><h3>alberto</h3><p>¡Adopta a Alberto: Loro Parlanchín y muy Cariñoso! Alberto, loro verde con toques azul/amarillo, es inteligente y curioso. Este brillante amigo busca un hogar lleno de amor. ¡Te espera!</p><button onclick="abrirFormulario('Verde')">Adoptar</button></div>
         <div class="card"><img src="tortu.jpg" alt="Lenta"onclick="verImagen(this.src)"><h3>Lenta</h3><p>¡Adopta a Lenta: Un Tesoro Tranquilo y Único!Lenta, tortuga con caparazón distintivo, es un espíritu paciente. Perfecta para un hogar sereno, trayendo paz.</p><button onclick="abrirFormulario('Caparazón')">Adoptar</button></div>
+        <div class="card"><img src="pablo.webp" alt="Pablo"onclick="verImagen(this.src)"><h3>Pablo</h3><p>¡Adopta a Pablo: Pequeño Explorador!Pablo, un adorable ratoncito bicolor, es un espíritu curioso y activo. Compañero tranquilo pero lleno de vida, listo para llenar tu hogar de alegría.¡Pablo te espera para una aventura en miniatura!</p><button onclick="abrirFormulario('Caparazón')">Adoptar</button></div>
       </div>
     </section>
     <section id="reflexion">
@@ -79,10 +91,11 @@ Ellos te esperan.”</p>
         <p><strong>Email:</strong> PawsOfLove@mejoramistad.org</p>
         <ul>
           <li>📘 Facebook: @PawsOfLove</li>
-          <li>📷 Instagram: @PawsOfLove.pe</li>
+          <li>📷 Instagram: @LOVE.PAWSOF</li>
         </ul>
       </div>
     </section>
+    
   </div>
   <div id="modal" class="modal">
     <div class="modal-content">
@@ -101,7 +114,28 @@ Ellos te esperan.”</p>
   <span class="close" onclick="cerrarImagen()">&times;</span>
   <img class="modal-img" id="imagenGrande">
 </div>
-  <footer>
+<section id="desarrolladores">
+  <h2>👨‍💻 Desarrolladores</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="fernando.jpeg" alt="Desarrollador 1">
+      <h4>¡Hola! Soy Fernando Renato Aranda Rojas, un entusiasta estudiante de primer año de Ingeniería Industrial en la prestigiosa Universidad Nacional Hermilio Valdizan.Con 24 años, ya cuento con una sólida base técnica, habiendo culminado una carrera en el Instituto Arzobispo Loayza. Esta combinación de experiencia y nuevos conocimientos me impulsa a crecer profesionalmente.Siempre estoy abierto a nuevas conexiones y oportunidades. Puedes contactarme en fernandoarandarojas8@gmail.com o al 928152197.¡Encantado de presentarme!</h4>
+      <p>Desarrollador Frontend</p>
+    </div>
+    <div class="card">
+      <img src="deyvis.jpeg" alt="Desarrollador 2">
+      <h4>Deyvis Uzuriaga Obregón Estudiante de primer año de ingeniería industrial en la Universidad Nacional Hermilio Valdizan.Tengo 20 años soy licenciado de las fuerzas armadas.Apasionado por la música, fútbol y amante de la naturaleza.Contacto: deyvisuzuriaga888@gmail.com o al 973601242 </h4>
+      <p>Scrum Master</p>
+    </div>
+    <div class="card">
+      <img src="dev3.jpg" alt="Desarrollador 3">
+      <h3>Andrés Torres</h3>
+      <p>Integración y testing</p>
+    </div>
+  </div>
+</section>
+  
+<footer>
     <p>&copy; 2025 Adopta una Mejor Amistad. Todos los derechos reservados a Fernando Aranda Rojas.</p>
   </footer>
   <script src="funciones.js"></script>
