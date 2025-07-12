@@ -151,3 +151,17 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 20px white;
 }
+section {
+  display: none;
+}
+
+section.activa {
+  display: block;
+}
+h4 {
+  font-size: 14px;     
+  font-weight: normal; 
+  color: #555;         
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
