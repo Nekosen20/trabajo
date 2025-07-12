@@ -32,3 +32,12 @@ window.onclick = function(event) {
 function cerrarImagen() {
   document.getElementById("imgModal").style.display = "none";
 }
+function mostrarSeccion(id) {
+  const secciones = document.querySelectorAll("section");
+  secciones.forEach(sec => sec.classList.remove("activa")); 
+  const activa = document.getElementById(id);
+  if (activa) activa.classList.add("activa"); 
+}
+window.addEventListener("DOMContentLoaded", () => {
+  mostrarSeccion("resumen");
+});
